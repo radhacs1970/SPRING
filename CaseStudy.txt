@@ -1,0 +1,30 @@
+Do the following operations using spring restcontroller and jpa either using h2 db or mysql db server.
+
+Create a Employee class with attributes employee id, firstname, lastname, loginusername, loginpassword, designation, leavebalance.
+
+Initially create 5 employees with leavebalance to 20 
+
+
+showallemployees
+showemployeegivenid
+Addnewemployee
+updateemployee details given id
+
+The functionality is to apply leave for the employee:
+specify start and end of leave. 
+The start date should be greater than or equal to today and end date should be equal or greater than start date for applying leave.
+ 
+Whenever employee applies for leave, the number of days should be calculated based on start and end date of leave.
+The leave should be deducted and updated in the leavebalance column of employee.
+ The Leave balance after deduction should be greaterthan or equal to 0.
+Throw an error message when there is no sufficient leavebalance is available for applying a leave.
+
+Nicetodo:-
+Create a leavedetails table with leaveid, employeeid, startdate, enddate, noofdays and insert the same whenever
+the employee applies for leave.
+The leavedetails record should be updated when the leavebalance is being deducted from the employee table.
+
+The above is the backend operation used as webservice.  The presentation layer is Angular.
+One can validate the abover operation using Postman as client or Advance Rest Client (ARC) an opensource application.
+
+
